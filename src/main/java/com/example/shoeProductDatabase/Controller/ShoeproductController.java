@@ -31,7 +31,7 @@ public class ShoeproductController {
 		return shoeproductservice.updateProduct(productname, shoeproduct);
 	}
 	
-	@DeleteMapping("delete")
+	@DeleteMapping("/delete")
 	public String delete(@RequestHeader String productname) {
 		shoeproductservice.deleteproduct(productname);
 		return "data deleted";
